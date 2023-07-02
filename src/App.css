@@ -1,0 +1,24 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --bgColor: #090a1a;
+}
+
+body {
+  font-size: 100%;
+}
+
+html {
+  background-color: var(--bgColor);
+}
+
+#root {
+  background-color: var(--bgColor);
+}
