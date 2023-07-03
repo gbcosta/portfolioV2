@@ -17,10 +17,12 @@ const Header = (): JSX.Element => {
         position: { md: "sticky", base: "relative" },
         top: { md: 100, base: 0 },
         alignSelf: "flex-start",
+        display: "flex",
+        alignItems: { md: "flex-start", base: "center" },
       }}
     >
       <Heading
-        size={"3xl"}
+        size={{ lg: "3xl", base: "2xl" }}
         sx={{
           fontWeight: 900,
           bgGradient: "linear(to-r, #9cf1ea, #f39cf3)",

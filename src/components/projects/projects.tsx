@@ -5,7 +5,9 @@ import Portfoliov1 from "../../assets/images/portfoliov1.png";
 
 const Projects = (): JSX.Element => {
   return (
-    <Flex sx={{ flexDir: "column", width: "100%", gap: 4 }}>
+    <Flex
+      sx={{ flexDir: "column", width: "100%", gap: 4, mt: { base: 8, md: 0 } }}
+    >
       <Heading
         sx={{
           textAlign: "center",
