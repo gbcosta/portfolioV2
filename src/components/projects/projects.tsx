@@ -1,10 +1,21 @@
-import { Flex } from "@chakra-ui/react";
+import { Flex, Heading } from "@chakra-ui/react";
 import CardItem from "../cardItem/cardItem";
 import PurpleOceanImage from "../../assets/images/PurpleOceanImage.jpeg";
 
-const CardItemContainer = (): JSX.Element => {
+const Projects = (): JSX.Element => {
   return (
     <Flex sx={{ flexDir: "column", width: "100%", gap: 4 }}>
+      <Heading
+        sx={{
+          textAlign: "center",
+          bgGradient: "linear(to-r, #9cf1ea, #f39cf3)",
+          backgroundClip: "text",
+          color: "transparent",
+          fontWeight: 700,
+        }}
+      >
+        Projects
+      </Heading>
       <CardItem
         img={PurpleOceanImage}
         header="Purple Ocean Theme"
@@ -82,4 +93,4 @@ const CardItemContainer = (): JSX.Element => {
   );
 };
 
-export default CardItemContainer;
+export default Projects;

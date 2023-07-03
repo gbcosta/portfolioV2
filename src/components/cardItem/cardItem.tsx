@@ -52,7 +52,14 @@ const CardItem = (props: {
         padding: 4,
       }}
     >
-      <Image src={props.img} sx={{ maxW: 1920 / 16, maxHeight: 1080 / 16 }} />
+      <Image
+        src={props.img}
+        sx={{
+          maxW: { sm: 1920 / 16, base: 0 },
+          maxHeight: 1080 / 16,
+          visibility: { sm: "visible", base: "hidden" },
+        }}
+      />
       <Flex sx={{ flexDir: "column", ml: 6 }}>
         <CardHeader
           sx={{

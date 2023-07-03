@@ -1,7 +1,7 @@
 import Header from "./components/header/header";
 import "./App.css";
 import { Flex } from "@chakra-ui/react";
-import CardItemContainer from "./components/cardItemContainer/cardItemContainer.tsx";
+import Projects from "./components/projects/projects";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       }}
     >
       <Header />
-      <CardItemContainer />
+      <Projects />
     </Flex>
   );
 }
