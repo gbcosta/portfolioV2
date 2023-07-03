@@ -1,4 +1,4 @@
-import { Heading, Text, Box, Flex, keyframes } from "@chakra-ui/react";
+import { Heading, Text, Flex, Box } from "@chakra-ui/react";
 import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai";
 
 const Header = (): JSX.Element => {
@@ -9,7 +9,15 @@ const Header = (): JSX.Element => {
   };
 
   return (
-    <Flex sx={{ backgroundColor: "inherit", flexDir: "column" }}>
+    <Box
+      position={"sticky"}
+      sx={{
+        backgroundColor: "inherit",
+        flexDir: "column",
+        width: "100%",
+        position: "sticky",
+      }}
+    >
       <Flex>
         <Heading
           size={"3xl"}
@@ -30,28 +38,30 @@ const Header = (): JSX.Element => {
       <Text color={"white"} sx={{ mt: "4" }}>
         I build apps APIs and games
       </Text>
-      <Flex sx={{ mt: "4", gap: 2 }}>
-        <AiFillGithub
-          style={iconsStyle}
-          onClick={() => {
-            window.open("https://github.com/gbcosta");
-          }}
-        />
-        <AiFillLinkedin
-          style={iconsStyle}
-          onClick={() => {
-            window.open("https://www.linkedin.com/in/gbcostasantos/");
-          }}
-        />
-        <AiFillMail
-          style={iconsStyle}
-          onClick={() => {
-            window.location.href =
-              "mailto:gbcostasant@gmail.com?subject=&body=Gabriel%20Santos";
-          }}
-        />
-      </Flex>
-    </Flex>
+      <footer>
+        <Flex sx={{ mt: "4", gap: 2 }}>
+          <AiFillGithub
+            style={iconsStyle}
+            onClick={() => {
+              window.open("https://github.com/gbcosta");
+            }}
+          />
+          <AiFillLinkedin
+            style={iconsStyle}
+            onClick={() => {
+              window.open("https://www.linkedin.com/in/gbcostasantos/");
+            }}
+          />
+          <AiFillMail
+            style={iconsStyle}
+            onClick={() => {
+              window.location.href =
+                "mailto:gbcostasant@gmail.com?subject=&body=Gabriel%20Santos";
+            }}
+          />
+        </Flex>
+      </footer>
+    </Box>
   );
 };
 

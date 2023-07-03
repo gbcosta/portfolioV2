@@ -14,12 +14,12 @@ const TechInfo = (props: { children?: any }): JSX.Element => {
     <Box
       sx={{
         mt: 2,
-        bgColor: "blue.400",
+        bgColor: "#4bc7dd40",
+        color: "#51d8f0",
         rounded: "full",
         pl: 2,
         pr: 2,
         fontSize: "md",
-        color: "white",
       }}
     >
       {props.children}
