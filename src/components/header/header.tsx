@@ -36,29 +36,27 @@ const Header = (): JSX.Element => {
       <Text color={"white"} sx={{ mt: "4" }}>
         I build apps APIs and games
       </Text>
-      <footer>
-        <Flex sx={{ mt: "4", gap: 2 }}>
-          <AiFillGithub
-            style={iconsStyle}
-            onClick={() => {
-              window.open("https://github.com/gbcosta");
-            }}
-          />
-          <AiFillLinkedin
-            style={iconsStyle}
-            onClick={() => {
-              window.open("https://www.linkedin.com/in/gbcostasantos/");
-            }}
-          />
-          <AiFillMail
-            style={iconsStyle}
-            onClick={() => {
-              window.location.href =
-                "mailto:gbcostasant@gmail.com?subject=&body=Gabriel%20Santos";
-            }}
-          />
-        </Flex>
-      </footer>
+      <Flex sx={{ mt: 12, gap: 2 }}>
+        <AiFillGithub
+          style={iconsStyle}
+          onClick={() => {
+            window.open("https://github.com/gbcosta");
+          }}
+        />
+        <AiFillLinkedin
+          style={iconsStyle}
+          onClick={() => {
+            window.open("https://www.linkedin.com/in/gbcostasantos/");
+          }}
+        />
+        <AiFillMail
+          style={iconsStyle}
+          onClick={() => {
+            window.location.href =
+              "mailto:gbcostasant@gmail.com?subject=&body=Gabriel%20Santos";
+          }}
+        />
+      </Flex>
     </Box>
   );
 };
