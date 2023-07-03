@@ -48,6 +48,7 @@ const CardItem = (props: {
         _hover: {
           bgColor: "#1d1d2ea7",
           color: "#ab5edf",
+          shadow: "0px 0px 20px 1px rgba(0,0,0,0.3)",
         },
         padding: 4,
       }}
@@ -74,7 +75,7 @@ const CardItem = (props: {
           <Box
             sx={{
               _groupHover: { transform: "translate(10%, -10%)" },
-              transition: "transform 0.2s",
+              transition: "transform 0.1s",
             }}
           >
             <HiOutlineExternalLink />

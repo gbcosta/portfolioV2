@@ -10,7 +10,8 @@ function App() {
       height={"100vh"}
       sx={{
         marginX: { "2xl": 250, xl: 100, lg: 50, md: 25, sm: 10, base: 5 },
-        marginY: 100,
+        mt: 100,
+        mb: 25,
         height: "100hs",
         flexDir: { md: "row", base: "column" },
       }}
