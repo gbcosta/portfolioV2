@@ -1,6 +1,7 @@
 import { Flex, Heading } from "@chakra-ui/react";
 import CardItem from "../cardItem/cardItem";
 import PurpleOceanImage from "../../assets/images/PurpleOceanImage.jpeg";
+import Portfoliov1 from "../../assets/images/portfoliov1.png";
 
 const Projects = (): JSX.Element => {
   return (
@@ -25,66 +26,10 @@ const Projects = (): JSX.Element => {
         marketplace, but none of them i really liked
       </CardItem>
       <CardItem
-        img={PurpleOceanImage}
-        header="Purple Ocean Theme"
-        techsInfo={["javascript", "typescript"]}
+        img={Portfoliov1}
+        header="Portfolio V1"
+        techsInfo={["Typescript", "React", "Chakra UI"]}
       >
-        I decided create a theme for me, there are a lot of theme in the vscode
-        marketplace, but none of them i really liked
-      </CardItem>
-      <CardItem img={PurpleOceanImage} header="Purple Ocean Theme">
-        I decided create a theme for me, there are a lot of theme in the vscode
-        marketplace, but none of them i really liked
-      </CardItem>
-      <CardItem img={PurpleOceanImage} header="Purple Ocean Theme">
-        I decided create a theme for me, there are a lot of theme in the vscode
-        marketplace, but none of them i really liked
-      </CardItem>
-      <CardItem img={PurpleOceanImage} header="Purple Ocean Theme">
-        I decided create a theme for me, there are a lot of theme in the vscode
-        marketplace, but none of them i really liked
-      </CardItem>
-      <CardItem img={PurpleOceanImage} header="Purple Ocean Theme">
-        I decided create a theme for me, there are a lot of theme in the vscode
-        marketplace, but none of them i really liked
-      </CardItem>
-      <CardItem img={PurpleOceanImage} header="Purple Ocean Theme">
-        I decided create a theme for me, there are a lot of theme in the vscode
-        marketplace, but none of them i really liked
-      </CardItem>
-      <CardItem img={PurpleOceanImage} header="Purple Ocean Theme">
-        I decided create a theme for me, there are a lot of theme in the vscode
-        marketplace, but none of them i really liked
-      </CardItem>
-      <CardItem img={PurpleOceanImage} header="Purple Ocean Theme">
-        I decided create a theme for me, there are a lot of theme in the vscode
-        marketplace, but none of them i really liked
-      </CardItem>
-      <CardItem img={PurpleOceanImage} header="Purple Ocean Theme">
-        I decided create a theme for me, there are a lot of theme in the vscode
-        marketplace, but none of them i really liked
-      </CardItem>
-      <CardItem img={PurpleOceanImage} header="Purple Ocean Theme">
-        I decided create a theme for me, there are a lot of theme in the vscode
-        marketplace, but none of them i really liked
-      </CardItem>
-      <CardItem img={PurpleOceanImage} header="Purple Ocean Theme">
-        I decided create a theme for me, there are a lot of theme in the vscode
-        marketplace, but none of them i really liked
-      </CardItem>
-      <CardItem img={PurpleOceanImage} header="Purple Ocean Theme">
-        I decided create a theme for me, there are a lot of theme in the vscode
-        marketplace, but none of them i really liked
-      </CardItem>
-      <CardItem img={PurpleOceanImage} header="Purple Ocean Theme">
-        I decided create a theme for me, there are a lot of theme in the vscode
-        marketplace, but none of them i really liked
-      </CardItem>
-      <CardItem img={PurpleOceanImage} header="Purple Ocean Theme">
-        I decided create a theme for me, there are a lot of theme in the vscode
-        marketplace, but none of them i really liked
-      </CardItem>
-      <CardItem img={PurpleOceanImage} header="Purple Ocean Theme">
         I decided create a theme for me, there are a lot of theme in the vscode
         marketplace, but none of them i really liked
       </CardItem>
