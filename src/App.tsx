@@ -9,9 +9,10 @@ function App() {
       className="Container"
       height={"100vh"}
       sx={{
-        marginX: { "2xl": 250, xl: 100, lg: 75, md: 50, sm: 25 },
+        marginX: { "2xl": 250, xl: 100, lg: 50, md: 25, sm: 10, base: 5 },
         marginY: 100,
         height: "100hs",
+        flexDir: { md: "row", base: "column" },
       }}
     >
       <Header />

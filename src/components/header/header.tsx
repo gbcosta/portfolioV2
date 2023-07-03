@@ -14,8 +14,8 @@ const Header = (): JSX.Element => {
         backgroundColor: "inherit",
         flexDir: "column",
         width: "100%",
-        position: "sticky",
-        top: 100,
+        position: { md: "sticky", base: "relative" },
+        top: { md: 100, base: 0 },
         alignSelf: "flex-start",
       }}
     >
