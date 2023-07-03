@@ -35,8 +35,7 @@ const Projects = (): JSX.Element => {
         techsInfo={["Typescript", "React", "Chakra UI"]}
         link="https://gbcostasantv1.netlify.app/"
       >
-        I decided create a theme for me, there are a lot of theme in the vscode
-        marketplace, but none of them i really liked
+        My previous portfolio
       </CardItem>
       <Flex sx={{ flexDir: "column" }}></Flex>
     </Flex>

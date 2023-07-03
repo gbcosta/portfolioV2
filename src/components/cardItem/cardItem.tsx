@@ -62,8 +62,17 @@ const CardItem = (props: {
       <Image
         src={props.img}
         sx={{
-          maxW: { sm: 1920 / 16, base: 0 },
-          maxHeight: 1080 / 16,
+          maxW: {
+            md: 1920 / 12,
+            lg: 1920 / 10,
+            "2xl": 1920 / 8,
+            base: "0px",
+          },
+          maxHeight: {
+            sm: 1080 / 12,
+            lg: 1080 / 10,
+            "2xl": 1080 / 8,
+          },
           visibility: { sm: "visible", base: "hidden" },
         }}
       />
@@ -75,7 +84,7 @@ const CardItem = (props: {
             flexDir: "row",
             display: "flex",
             gap: 2,
-            fontSize: { base: "md", "2xl": "xl" },
+            fontSize: { base: "md", xl: "lg", "2xl": "2xl" },
             fontWeight: 700,
           }}
         >
@@ -94,7 +103,7 @@ const CardItem = (props: {
             padding: 0,
             color: "gray",
             mt: 2,
-            fontSize: { base: "sm", "2xl": "lg" },
+            fontSize: { base: "sm", xl: "lg", "2xl": "xl" },
           }}
         >
           {props.children}
