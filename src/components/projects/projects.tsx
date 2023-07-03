@@ -15,7 +15,7 @@ const Projects = (): JSX.Element => {
           backgroundClip: "text",
           color: "transparent",
           fontWeight: 700,
-          fontSize: { base: "3xl", "2xl": "4xl" },
+          fontSize: { base: "4xl", "2xl": "5xl" },
         }}
       >
         Projects
