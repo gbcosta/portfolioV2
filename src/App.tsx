@@ -7,9 +7,12 @@ function App() {
   return (
     <Flex
       className="Container"
-      padding={16}
       height={"100vh"}
-      sx={{ ml: "50", mr: "50" }}
+      sx={{
+        marginX: { "2xl": 250, xl: 100, lg: 75, md: 50, sm: 25 },
+        marginY: 100,
+        height: "100hs",
+      }}
     >
       <Header />
       <CardItemContainer />

@@ -16,22 +16,20 @@ const Header = (): JSX.Element => {
         width: "100%",
         position: "sticky",
         top: 100,
+        alignSelf: "flex-start",
       }}
     >
-      <Flex>
-        <Heading
-          size={"3xl"}
-          sx={{
-            fontWeight: 900,
-            bgGradient: "linear(to-r, #9cf1ea, #f39cf3)",
-            backgroundClip: "text",
-            color: "transparent",
-          }}
-        >
-          Gabriel Santos
-        </Heading>
-      </Flex>
-
+      <Heading
+        size={"3xl"}
+        sx={{
+          fontWeight: 900,
+          bgGradient: "linear(to-r, #9cf1ea, #f39cf3)",
+          backgroundClip: "text",
+          color: "transparent",
+        }}
+      >
+        Gabriel Santos
+      </Heading>
       <Text sx={{ color: "white", fontWeight: 800, mt: "4", fontsize: "8" }}>
         Full Stack Developer & Game Developer
       </Text>

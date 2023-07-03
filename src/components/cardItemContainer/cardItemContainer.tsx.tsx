@@ -4,8 +4,7 @@ import PurpleOceanImage from "../../assets/images/PurpleOceanImage.jpeg";
 
 const CardItemContainer = (): JSX.Element => {
   return (
-    <Flex sx={{ flexDir: "column", width: "100%" }}>
-      <Flex sx={{ flexDir: "column" }}></Flex>
+    <Flex sx={{ flexDir: "column", width: "100%", gap: 4 }}>
       <CardItem
         img={PurpleOceanImage}
         header="Purple Ocean Theme"
