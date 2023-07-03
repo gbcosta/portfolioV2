@@ -3,7 +3,6 @@ import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai";
 
 const Header = (): JSX.Element => {
   const iconsStyle = {
-    fontSize: 25,
     cursor: "pointer",
     fill: "white",
   };
@@ -22,7 +21,7 @@ const Header = (): JSX.Element => {
       }}
     >
       <Heading
-        size={{ lg: "3xl", base: "2xl" }}
+        size={{ "2xl": "4xl", lg: "3xl", base: "2xl" }}
         sx={{
           fontWeight: 900,
           bgGradient: "linear(to-r, #9cf1ea, #f39cf3)",
@@ -32,13 +31,23 @@ const Header = (): JSX.Element => {
       >
         Gabriel Santos
       </Heading>
-      <Text sx={{ color: "white", fontWeight: 800, mt: "4", fontsize: "8" }}>
+      <Text
+        sx={{
+          color: "white",
+          fontWeight: 800,
+          mt: "4",
+          fontSize: { "2xl": "2xl", lg: "xl", base: "lg" },
+        }}
+      >
         Full Stack Developer & Game Developer
       </Text>
-      <Text color={"white"} sx={{ mt: "4" }}>
+      <Text
+        color={"white"}
+        sx={{ mt: "4", fontSize: { "2xl": "xl", lg: "md", base: "sm" } }}
+      >
         I build apps APIs and games
       </Text>
-      <Flex sx={{ mt: 12, gap: 2 }}>
+      <Flex sx={{ mt: 12, gap: 2, fontSize: { "2xl": 35, lg: 30, base: 25 } }}>
         <AiFillGithub
           style={iconsStyle}
           onClick={() => {

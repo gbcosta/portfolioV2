@@ -17,9 +17,9 @@ const TechInfo = (props: { children?: any }): JSX.Element => {
         bgColor: "#4bc7dd40",
         color: "#51d8f0",
         rounded: "full",
-        pl: 2,
-        pr: 2,
-        fontSize: "md",
+        pl: 4,
+        pr: 4,
+        fontSize: { base: "md", "2xl": "xl" },
       }}
     >
       {props.children}
@@ -75,6 +75,8 @@ const CardItem = (props: {
             flexDir: "row",
             display: "flex",
             gap: 2,
+            fontSize: { base: "md", "2xl": "xl" },
+            fontWeight: 700,
           }}
         >
           {props.header}
@@ -87,7 +89,14 @@ const CardItem = (props: {
             <HiOutlineExternalLink />
           </Box>
         </CardHeader>
-        <CardBody sx={{ padding: 0, color: "gray", mt: 2 }}>
+        <CardBody
+          sx={{
+            padding: 0,
+            color: "gray",
+            mt: 2,
+            fontSize: { base: "sm", "2xl": "lg" },
+          }}
+        >
           {props.children}
         </CardBody>
         <CardFooter sx={{ padding: 0, gap: 2, flexWrap: "wrap" }}>
