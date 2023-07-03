@@ -10,12 +10,12 @@ const Header = (): JSX.Element => {
 
   return (
     <Box
-      position={"sticky"}
       sx={{
         backgroundColor: "inherit",
         flexDir: "column",
         width: "100%",
         position: "sticky",
+        top: 100,
       }}
     >
       <Flex>

@@ -76,8 +76,10 @@ const CardItem = (props: {
         <CardBody sx={{ padding: 0, color: "gray", mt: 2 }}>
           {props.children}
         </CardBody>
-        <CardFooter sx={{ padding: 0 }}>
-          <TechInfo>vscode</TechInfo>
+        <CardFooter sx={{ padding: 0, gap: 2, flexWrap: "wrap" }}>
+          {props.techsInfo?.map((value, index) => {
+            return <TechInfo key={index}>{value}</TechInfo>;
+          })}
         </CardFooter>
       </Flex>
     </Card>
