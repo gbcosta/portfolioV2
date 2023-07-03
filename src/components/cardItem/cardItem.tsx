@@ -27,30 +27,36 @@ const TechInfo = (props: { children?: any }): JSX.Element => {
   );
 };
 
+const CardSx = {
+  bgColor: "gray",
+  flexDir: "row",
+  backgroundColor: "#090a1a",
+  color: "white",
+  margin: 0,
+  boxShadow: "none",
+  cursor: "pointer",
+  transition: "0.3s",
+  _hover: {
+    bgColor: "#1d1d2ea7",
+    color: "#ab5edf",
+    shadow: "0px 0px 20px 1px rgba(0,0,0,0.3)",
+  },
+  padding: 4,
+};
+
 const CardItem = (props: {
   img: string;
   techsInfo?: Array<string>;
   header: string;
   children: string;
+  link: string;
 }): JSX.Element => {
   return (
     <Card
       role="group"
-      sx={{
-        bgColor: "gray",
-        flexDir: "row",
-        backgroundColor: "#090a1a",
-        color: "white",
-        margin: 0,
-        boxShadow: "none",
-        cursor: "pointer",
-        transition: "0.3s",
-        _hover: {
-          bgColor: "#1d1d2ea7",
-          color: "#ab5edf",
-          shadow: "0px 0px 20px 1px rgba(0,0,0,0.3)",
-        },
-        padding: 4,
+      sx={CardSx}
+      onClick={() => {
+        window.open(props.link);
       }}
     >
       <Image
