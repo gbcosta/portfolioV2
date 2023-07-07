@@ -60,6 +60,7 @@ const CardItem = (props: {
       }}
     >
       <Image
+        alt="Project Image"
         src={props.img}
         sx={{
           maxW: {
