@@ -10,10 +10,10 @@
 ![Chakra](https://img.shields.io/badge/chakra-%234ED1C5.svg?style=for-the-badge&logo=chakraui&logoColor=white)
 
 </div>
-This portfolio is the second version, was developes with React, typescript and Chakra UI to see the live click <a link="https://gbcostasant.netlify.app/"> here </a>
+This portfolio is the second version, was developes with React, typescript and Chakra UI to see the live click <a href="https://gbcostasant.netlify.app/"> here </a>
 
 <img src="./public/portfolio.png"/>
 
-Click <a link="https://gbcostasantv1.netlify.app/"> here </a> to see the first version
+Click <a href="https://gbcostasantv1.netlify.app/"> here </a> to see the first version
 
 </div>
